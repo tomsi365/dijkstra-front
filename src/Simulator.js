@@ -55,7 +55,7 @@ function getResults(vertexes,setResult){
         table.push(row)
     }
 
-    fetch('172.31.39.102:8080/',
+    fetch('http://dijkstrabackenv-env.eba-ikrw47ps.us-east-2.elasticbeanstalk.com/',
         {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
