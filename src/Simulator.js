@@ -55,7 +55,7 @@ function getResults(vertexes,setResult){
         table.push(row)
     }
 
-    fetch(' https://cors-everywhere.herokuapp.com/http://dijkstrabackenv-env.eba-ikrw47ps.us-east-2.elasticbeanstalk.com/',
+    fetch(' https://cors-everywhere.herokuapp.com/http://dijkstrabackenv-env-1.eba-ikrw47ps.us-east-2.elasticbeanstalk.com/',
         {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
