@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+:root {
+    --background-color:#EEEEEE;
+    --border-color:#EEEEEE;
+
+    --navigation-bar-color:#222831;
+    --content-background-color:#222831;
+
+    --hover-navigation-bar-hover:#393E46;
+
+    --navigation-bar-text:#00ADB5;
+    --content-text-color:#00ADB5;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background-color: var(--background-color);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Navigation-Bar {
+    list-style-type: none;
+    position: relative;
+    width : 60%;
+    top: 50px;
+
+    border-radius: 25px;
+    padding: 0px 25px;
+    overflow: hidden;
+    background-color: var(--navigation-bar-color);
+    margin: auto;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Navigation-Bar li {
+    float :left
 }
 
-.App-link {
-  color: #61dafb;
+.Navigation-Bar li button {
+    all: unset;
+    display: block;
+    width: 120px;
+    height: 40px;
+
+    color: var(--navigation-bar-text);
+    font-size:24px ;
+    padding: 5px;
+    cursor: pointer;
+    text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Navigation-Bar li button:hover {
+    background-color: var(--hover-navigation-bar-hover);
 }
+
+.Content {
+    position: relative;
+    width : 60%;
+    height: 550px;
+    top: 100px;
+
+    border-radius: 25px;
+    padding: 10px 25px;
+    background-color: var(--content-background-color);
+    color: var(--content-text-color);
+    font-size:20px ;
+    margin: auto;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid var(--border-color);
+}
+
+th, td {
+    border-collapse: collapse;
+    border: 1px solid var(--border-color);
+    padding: 5px;
+}
+
