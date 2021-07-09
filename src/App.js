@@ -19,14 +19,14 @@ function Algorithm(){
         <div className='Content'>
             Dijkstra(Graph, source): <br/>
             <br/>
-            &nbsp;&nbsp;d[source] = 0 <br/>
             &nbsp;&nbsp;create vertex priority queue Q <br/>
             <br/>
             &nbsp;&nbsp;for each vertex v in Graph: <br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;if v != source <br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d[v] = INFINITY <br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p[v] = UNDEFINED <br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Q.add(v, d[v]) <br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;d[v] = INFINITY <br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;p[v] = UNDEFINED <br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;Q.add(v, d[v]) <br/>
+            <br/>
+            &nbsp;&nbsp;d[source] = 0 <br/>
             <br/>
             &nbsp;&nbsp;while Q is not empty: <br/>
             &nbsp;&nbsp;&nbsp;&nbsp;u = Q.deleteMin() <br/>
