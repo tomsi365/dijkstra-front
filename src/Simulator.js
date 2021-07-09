@@ -68,7 +68,7 @@ function getResults(vertexes,setResult){
         .then((response) => {return response.json()})
         .then((responseData) => {return responseData})
         .then((data) => {setResult(data)})
-        .catch((err) => {console.log(err)})
+        .catch((err) => {alert(err)})
 }
 
 function DRow(result){
